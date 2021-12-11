@@ -40,7 +40,10 @@ public class Post{
 	@Column(name = "last_updated_at")
     private Date lastUpdatedAt = new Date();
 	
-	
+	@ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+	@JoinTable(name = "post_tags",
+		joinColumns = { @JoinColumn(name = "post_id")},
+		inverseJoinColumns = { @JoinColumn (name = "tag_id")})
 	private Set<Tag> tags = new HashSet<>();
 
 	
