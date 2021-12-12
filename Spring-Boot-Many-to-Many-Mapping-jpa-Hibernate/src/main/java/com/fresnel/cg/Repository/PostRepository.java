@@ -1,4 +1,4 @@
-package com.fresnel.cg.models.Repository;
+package com.fresnel.cg.Repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;

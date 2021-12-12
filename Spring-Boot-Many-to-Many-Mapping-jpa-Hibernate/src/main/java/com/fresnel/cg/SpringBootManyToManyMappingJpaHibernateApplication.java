@@ -5,9 +5,9 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import com.fresnel.cg.Repository.PostRepository;
 import com.fresnel.cg.models.Post;
 import com.fresnel.cg.models.Tag;
-import com.fresnel.cg.models.Repository.PostRepository;
 
 @SpringBootApplication
 public class SpringBootManyToManyMappingJpaHibernateApplication implements CommandLineRunner{
